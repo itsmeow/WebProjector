@@ -1,17 +1,13 @@
 {
-  "id": "modid",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "id": "webprojector",
+  "name": "Web Projector",
+  "description": "Mod for Fabric using Farfetchd's library, Illuminate, as a projector for web display. ",
   "version": "${version}",
   "side": "universal",
   "initializers": [
-    "net.fabricmc.example.ExampleMod"
+    "its_meow.webprojector.WebProjectorMod"
   ],
   "requires": {
     "fabric": "*"
-  },
-  "mixins": {
-    "client": "modid.client.json",
-    "common": "modid.common.json"
   }
 }
