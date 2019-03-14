@@ -7,7 +7,7 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 archivesBaseName = "webprojector"
-version = ${project.mod_version}
+version = project.mod_version
 group = "its_meow.webprojector"
 
 minecraft {
