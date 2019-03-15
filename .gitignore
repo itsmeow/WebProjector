@@ -4,6 +4,9 @@
 build/
 out/
 
+# eclipse
+*.launch
+
 # idea
 
 .idea/
