@@ -1,6 +1,7 @@
 plugins {
-	id 'fabric-loom' version '0.2.0-SNAPSHOT'
-	id 'maven-publish'
+	id("fabric-loom") version "0.2.0-SNAPSHOT"
+	id("maven-publish")
+	id "org.jetbrains.kotlin.jvm" version "1.3.21"
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -17,6 +18,15 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}"
 	modCompile "net.fabricmc:fabric-loader:${project.loader_version}"
+	
+	compileOnly(group: "net.fabricmc", name: "fabric-language-kotlin", version: "1.3.20+")
+	
+	compileOnly("org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.21")
+	
+	compileOnly 'org.jetbrains.kotlin:kotlin-stdlib:1.3.21'
+    compileOnly 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.21'
+    compile(files("/libs/illuminate-1.0.0-dev.jar"))
+    compile(files("/libs/qcommon-croco-1.0.4-dev.jar"))
 
 	modCompile "net.fabricmc:fabric:${project.fabric_version}"
 }
