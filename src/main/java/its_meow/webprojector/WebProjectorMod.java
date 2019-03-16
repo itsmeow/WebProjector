@@ -1,5 +1,8 @@
 package its_meow.webprojector;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import its_meow.webprojector.block.WebProjectionBlock;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;
@@ -13,6 +16,8 @@ public class WebProjectorMod implements ModInitializer {
 	public static final String MOD_ID = "webprojector";
 	
 	public static final WebProjectionBlock PROJECTOR_BLOCK = new WebProjectionBlock();
+	
+	public static final Logger LOG = LogManager.getLogger(MOD_ID);
 	
 	@Override
 	public void onInitialize() {
